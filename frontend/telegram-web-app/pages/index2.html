@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/index2.css">
+    <script src="https://kit.fontawesome.com/3dc5764727.js" crossorigin="anonymous"></script>
+    <script src="https://telegram.org/js/telegram-web-app.js?1"></script>
+    <title>Inicio</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row navbar" id="nav">
+            <div class="logo">
+                <img src="..\image\logo.png">
+            </div>
+            <div class="nav-right">
+                <i class="fa-solid fa-cart-shopping fa-bounce fa-xl" style="margin:auto"></i>
+                <div class="dropdown">
+                    <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa-solid fa-user"></i> User login
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Account Settings</a>
+                      <a class="dropdown-item" href="#">Sign Out</a>
+                    </div>
+                  </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="">
+            <div class="contenedor_enc">
+                <h3 id="menu">Menú disponible</h3>
+            </div>
+            <div class="contendor_menu">
+                <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-success">Comida rapida</button>
+                    <button type="button" class="btn btn-success">Menu vegetariano</button>
+                    <button type="button" class="btn btn-success">Carnes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    <div class="container">
+         <div class="row" id="fila_contenedor">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mx-0">
+            <div class="col-12" id="espaciador">
+                <button type="button" id="finalizar" class="btn btn-danger btn-sm btn-block" style="font-weight: bold;" data-toggle="modal" data-target="#exampleModalLong">
+                    Finalizar mi pedido
+                </button>
+                <div id="peer_wrap" style="display:none">
+                    <img id="peer_photo" class="chat_img" src="">
+                    <span id="peer_name"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Resumen mi pedido</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                
+                <div class="modal-body" id="contenido_modal">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="eliminarPedido">Eliminar mi pedido</button>
+                    <button type="button" class="btn btn-primary" id="pagar_pedido">Continuar a finalizar mi pedido</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--
+<section>
+    <pre><code id="webview_data"></code></pre>
+</section>
+-->
+
+<script type="application/javascript">
+
+    /*
+     * This is a demo code for Telegram WebApp for Bots
+     * It contains basic examples of how to use the API
+     * Note: all requests to backend are disabled in this demo, you should use your own backend
+     */
+
+
+    const DemoApp = {
+        initData: Telegram.WebApp.initData || '',
+        initDataUnsafe: Telegram.WebApp.initDataUnsafe || {},
+        MainButton: Telegram.WebApp.MainButton,
+
+        
+        init(options) {
+            document.body.style.visibility = '';
+            Telegram.WebApp.ready();
+            Telegram.WebApp.MainButton.setParams({
+                text: 'CERRAR MENÚ',
+                is_visible: true
+            }).onClick(DemoApp.close);
+        },
+        close() {
+            Telegram.WebApp.close();
+        },
+    }
+
+
+    const DemoAppInitData = {
+        init() {
+            DemoApp.init();
+            //document.getElementById('webview_data').innerHTML = JSON.stringify(DemoApp.initDataUnsafe, null, 2);
+            //console.log(JSON.stringify(DemoApp.initDataUnsafe, null, 2));
+        }
+    };
+
+
+  
+</script>
+
+<script type="application/javascript">
+    document.getElementById('webview_data').innerHTML = JSON.stringify(DemoApp.initDataUnsafe, null, 2);
+    console.log(JSON.stringify(DemoApp.initDataUnsafe, null, 2));
+    DemoApp.init();
+</script>
+
+    <script src="/js/jquery/code.jquery.com_jquery-3.7.0.min.js"> </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="/js/index2.js"></script>
+</body>
+</html> 

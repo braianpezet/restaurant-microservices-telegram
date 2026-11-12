@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.restaurante</groupId>
+    <artifactId>restaurante-sistema</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <name>Restaurante Sistema - Microservicios</name>
+    <description>Sistema de gestión de restaurantes y pedidos orientado a microservicios con Telegram Bot y WebApp</description>
+
+    <modules>
+        <module>services/auth-service</module>
+        <module>services/dish-service</module>
+        <module>services/restaurant-service</module>
+        <module>services/menu-service</module>
+        <module>services/order-service</module>
+        <module>services/telegram-bot</module>
+    </modules>
+</project>
+

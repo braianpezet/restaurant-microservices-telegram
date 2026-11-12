@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "nombre": "Hamburguesa",
+    "precio": 10,
+    "descripcion": "Deliciosa hamburguesa con carne y queso",
+    "categoria": "Comida rápida",
+    "urlFoto": "https://img.icons8.com/fluency/100/hamburger.png"
+  },
+  {
+    "id": 2,
+    "nombre": "Pizza",
+    "precio": 12,
+    "descripcion": "Sabrosa pizza con variedad de ingredientes",
+    "categoria": "Comida italiana",
+    "urlFoto": "https://img.icons8.com/emoji/100/pizza-emoji.png"
+  },
+  {
+    "id": 3,
+    "nombre": "Ensalada César",
+    "precio": 8,
+    "descripcion": "Ensalada fresca con pollo y aderezo César",
+    "categoria": "Ensaladas",
+    "urlFoto": "https://img.icons8.com/plasticine/100/salad.png"
+  },
+  {
+    "id": 4,
+    "nombre": "Sushi",
+    "precio": 15,
+    "descripcion": "Rolls de sushi con pescado fresco y arroz",
+    "categoria": "Comida japonesa",
+    "urlFoto": "https://img.icons8.com/plasticine/100/sushi.png"
+  },
+  {
+    "id": 5,
+    "nombre": "Pasta Alfredo",
+    "precio": 10,
+    "descripcion": "Pasta con salsa Alfredo y queso parmesano",
+    "categoria": "Comida italiana",
+    "urlFoto": "https://img.icons8.com/plasticine/100/spaghetti.png"
+  },
+  {
+    "id": 6,
+    "nombre": "Ceviche",
+    "precio": 14,
+    "descripcion": "Plato de ceviche con pescado fresco y limón",
+    "categoria": "Comida peruana",
+    "urlFoto": "https://img.icons8.com/external-icongeek26-flat-icongeek26/100/external-ceviche-fine-dining-icongeek26-flat-icongeek26.png"
+  },
+  {
+    "id": 7,
+    "nombre": "Tacos",
+    "precio": 9,
+    "descripcion": "Deliciosos tacos mexicanos con carne y salsa",
+    "categoria": "Comida mexicana",
+    "urlFoto": "https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-tacos-world-cuisine-flaticons-flat-flat-icons.png"
+  },
+  {
+    "id": 8,
+    "nombre": "Sopa de Tomate",
+    "precio": 6,
+    "descripcion": "Sopa caliente de tomate con croutones",
+    "categoria": "Sopas",
+    "urlFoto": "https://img.icons8.com/color/100/soup-plate.png"
+  },
+  {
+    "id": 9,
+    "nombre": "Pollo a la Parrilla",
+    "precio": 12,
+    "descripcion": "Pechuga de pollo a la parrilla con papas fritas",
+    "categoria": "Platos principales",
+    "urlFoto": "https://img.icons8.com/external-chloe-kerismaker/100/external-Chicken-new-year-chloe-kerismaker.png"
+  }
+]

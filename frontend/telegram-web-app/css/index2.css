@@ -1,0 +1,95 @@
+
+#espaciador{
+    height: 5rem;
+    width: 100rem;
+}
+img{
+
+    width: 80%;
+    height: 80%;
+}
+.card{
+    transition-duration: 0.3s;
+    max-width: 100%;
+}
+.card:hover{
+    background-color: #e8e8f0;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+
+.card{
+    padding: 0px;
+}
+
+.navbar{
+    display: flex;
+    /* float: right; */
+    flex-direction: row;
+    align-content: center;
+}
+
+.nav-right{
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.logo img{
+    width: 4rem;
+}
+
+.logo{
+    display: flex;
+    align-self: flex-start;
+}
+
+.btn-añadir{
+    display: flex;
+    justify-content: center;
+}
+
+.quantityInput{
+    width: 22%;
+    text-align:center;
+    border: 1px solid lightgrey;
+}
+
+.decreaseBtn{
+    width: 30px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.increaseBtn{
+    width: 30px;
+    font-weight: bold;
+    font-size: large;
+}
+
+#menu{
+    text-align: center;
+}
+.contendor_menu{
+    text-align: center;
+}
+.contenedor_enc{
+    margin: 3%;
+}
+#dropdownMenuButton{
+    margin:6%;
+}
+#nav{
+    height: 4rem;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+.lead{
+    font-size:medium;
+}
+#icono_user{
+    margin: 2%;
+}
